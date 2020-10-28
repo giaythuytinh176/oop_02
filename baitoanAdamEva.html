@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="adameva.js"></script>
+</head>
+<body>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<button onclick="eatApple()">An tao'</button>
+<p id="weightHuman"></p>
+<p id="weightApple"></p>
+
+
+<script>
+
+    let adam = new Human("Nghia", "Nam", 62);
+    let eva = new Human("Ca ngua", "Hai san", 50);
+    let apple = new Apple(10);
+
+
+    function eatApple() {
+        adam.eat(apple);
+
+        document.getElementById("weightHuman").innerHTML = "Can nang adman " + adam.weight;
+        document.getElementById("weightApple").innerHTML = "Can nang qua tao " + apple.weight;
+
+
+
+    }
+
+
+</script>
+
+
+</body>
+
+
+</html>
